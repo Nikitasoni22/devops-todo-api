@@ -1,0 +1,11 @@
+---
+- name: Configure server and deploy the Todo API
+  hosts: appservers
+  become: true
+  vars:
+    # Variable: port the app listens on
+    app_port: 8080
+    # Built artifact (run `mvn clean package` first)
+    jar_source: "{{ playbook_dir }}/../target/todo-api.jar"
+  roles:
+    - todoapp
