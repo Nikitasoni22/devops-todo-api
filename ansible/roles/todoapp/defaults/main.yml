@@ -1,0 +1,6 @@
+---
+app_name: todo-api
+app_user: todoapp
+app_dir: /opt/todo-api
+app_port: 8080
+jar_source: ../../target/todo-api.jar

@@ -1,0 +1,5 @@
+# Target host(s). "localhost" with a local connection works for a quick demo.
+# To use a VM or a Docker container instead, replace this with e.g.:
+#   app1 ansible_host=192.168.56.10 ansible_user=ubuntu
+[appservers]
+localhost ansible_connection=local
