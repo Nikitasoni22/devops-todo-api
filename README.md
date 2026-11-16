@@ -185,3 +185,9 @@ Work is done on feature branches and merged into `main` through pull requests:
 
 Screenshots of the Jenkins pipeline, GitHub Actions, Ansible runs, the Docker build and the
 Kubernetes deployment and scaling are in the [`Evidences/`](Evidences/README.md) folder.
+
+## API endpoints
+- GET / : service status
+- GET /todos : list todos
+- POST /todos : add a todo (JSON body with a title)
+- GET /actuator/health : health check
